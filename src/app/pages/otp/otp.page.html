@@ -1,0 +1,13 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>otp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ng-otp-input (onInputChange)="onOtpChange($event)" [config]="{length:6}">
+
+
+  </ng-otp-input><br/>
+  <p>otp : {{otp}}</p>
+</ion-content>
